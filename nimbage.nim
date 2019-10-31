@@ -10,6 +10,7 @@ type
     a is Equality
     a.construct() is T
     a.construct(type T) is T
+    a.construct(string) is T
     a.assign(type T, type var T)
 
   AdditiveGroup* = concept a, type T
