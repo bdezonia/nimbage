@@ -4,7 +4,7 @@ type
     a.isEqual(type T, type T) is bool
     a.isNotEqual(type T, type T) is bool
     a.zero(type var T)
-    a.isZero(type T) -> bool
+    a.isZero(type T) is bool
 
   Algebra* = concept a, type T
     a is Equality
