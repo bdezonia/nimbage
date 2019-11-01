@@ -18,3 +18,15 @@ type
     a.add(type T, type T, type var T)
     a.subtract(type T, type T, type var T)
     a.negate(type T, type var T)
+
+  Ring* = concept a, type T
+    a is AdditiveGroup
+    a.mul(type T, type T, type var T)
+    a.pow(int, type T, type var T)
+
+  Unity* = concept a, type T
+    a.unity(type var T)
+    
+  RingWithUnity* = concept a, type T
+    a is Ring and Unity
+    
